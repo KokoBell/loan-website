@@ -1,0 +1,31 @@
+.card {
+    position: relative;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 24rem;
+    height: 6rem;
+    border: 0.2px solid gray;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.text_wrapper {
+    margin-left: 8px;
+}
+
+.text {
+    font-size: 1rem;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.88rem;
+    position: absolute;
+    bottom: 0;
+    color: rgb(217, 3, 104);
+}

@@ -17,6 +17,29 @@
   padding-left: 2rem;
 }
 
+.achievements {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.headline {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  color: #1B1DC7;
+}
+
+.bar {
+  height: 2px;
+  width: 60px;
+  background-color: rgb(217, 3, 104);
+  display: inline-block;
+  margin: 10px auto 0px;
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -41,13 +64,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   .card,
   .footer {
     border-color: #222;
   }
+
   .code {
     background: #111;
   }
+
   .logo img {
     filter: invert(1);
   }
