@@ -1,0 +1,38 @@
+.list_section {
+    display: flex;
+    justify-content: center;
+}
+
+.list_items {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.list_item {
+    background: url('../public/ccptick.svg') left center no-repeat;
+    margin: 0px 0px 15px;
+    padding: 2px 0px 2px 36px;
+    color: rgb(5, 47, 95);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: 24px;
+    list-style: none;
+}
+
+.list_wrapper {
+    padding: 0;
+    margin-top: 4rem;
+}
+
+.left_image, .right_image {
+    margin-top: 4rem;
+}
+
+.left_image {
+    margin-right: 4rem;
+}
+
+.right_image {
+    margin-left: 4rem;
+}

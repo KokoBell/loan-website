@@ -4,10 +4,13 @@ import Card from '../components/card'
 import FlatCard from '../components/flat_card'
 import Heading from '../components/heading'
 import Hero from '../components/hero'
+import ListSection from '../components/list_section'
 import NavBar from '../components/navbar'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const hero_items = ['Card Limit is 100% of FD Amount', 'Instant Virtual Card']
+  const first_section_list = ['Credit Card on Fixed Deposit', 'Card Limit Equal to FD Amount', 'Helps Build Credit Score']
   return (
     <div className={styles.container}>
       <Head>
@@ -21,6 +24,7 @@ export default function Home() {
           source="/hands.png"
           main_text="Earn 6% interest on your FD &amp;"
           sub_text="Get a lifetime free Step Up Credit Card"
+          list_items={hero_items}
         />
         <Heading text="Cards &amp; loans" />
         <div className={styles.card_section}>
@@ -114,12 +118,25 @@ export default function Home() {
           <FlatCard text="This is some text" source="/rain.svg" url="/" />
         </div>
 
-        
-          <h2 className={styles.headline}>
-            Tailor Made Products <br /> Exclusively for LOANS Customers
-          </h2>
-          <span className={styles.bar}>&nbsp;</span>
-        
+
+        <h2 className={styles.headline}>
+          Tailor Made Products <br /> Exclusively for LOANS Customers
+        </h2>
+        <span className={styles.bar}>&nbsp;</span>
+
+        <ListSection
+          source="/small-bank-card.png"
+          headline="Step Up Credit Card"
+          list_items={first_section_list}
+          right
+        />
+
+        <ListSection
+          source="/small-bank-card.png"
+          headline="Step Up Credit Card"
+          list_items={first_section_list}
+        />
+
       </main>
 
       <footer className={styles.footer}>

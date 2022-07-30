@@ -19,10 +19,13 @@ const Hero = (props) => {
                 {props.sub_text}
             </p>
             <ul className={styles.list_items}>
-                <li className={styles.list_item}>Card Limit is 100% of FD Amount</li>
-                <li className={styles.list_item}>Instant Virtual Card</li>
+                {props.list_items.map((list_item) => {
+                    return <li className={styles.list_item}>
+                        {list_item}
+                    </li>
+                })}
             </ul>
-            <Button text="Get a Loan"/>
+            <Button text="Get a Loan" />
         </div>
     </div>
     )
