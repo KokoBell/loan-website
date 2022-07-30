@@ -1,0 +1,15 @@
+
+
+.nav_logo {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+}
+
+.nav_link {
+    padding-left: 2rem;
+}

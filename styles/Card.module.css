@@ -1,0 +1,22 @@
+.card {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 16rem;
+    height: 8rem;
+    border: 0.2px solid gray;
+    padding-left: 1rem;
+    border-radius: 8px;
+}
+
+.heading {
+    font-weight: 600;
+}
+
+.text {
+    font-size: 0.8rem;
+}
+
+.link {
+    position: relative;
+    bottom: 0;
+}
