@@ -7,6 +7,7 @@
     color: black;
     font-size: 1rem;
     font-weight: 600;
+    border: none;
 }
 
 .secondary {
@@ -15,9 +16,10 @@
     color: black;
     font-size: 1rem;
     font-weight: 600;
-    height: 2.2rem;
+    height: 2.4rem;
     min-width: 8rem;
     position: absolute;
     right: 0;
     margin-right: 2rem;
+    border: 2px solid white;
 }
