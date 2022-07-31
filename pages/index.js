@@ -30,6 +30,7 @@ export default function Home() {
           main_text="Earn 6% interest on your FD &amp;"
           sub_text="Get a lifetime free Step Up Credit Card"
           list_items={hero_items}
+          button_text="Get a Loan"
         />
 
         <Heading text="Cards &amp; loans" />

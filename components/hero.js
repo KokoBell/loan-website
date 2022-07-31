@@ -25,7 +25,7 @@ const Hero = (props) => {
                     </li>
                 })}
             </ul>
-            <Button text="Get a Loan" />
+            <Button text={props.button_text} />
         </div>
     </div>
     )

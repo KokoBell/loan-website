@@ -1,14 +1,11 @@
-.nav_bar {
-    color: #052F5F;
-    box-shadow: 2px 4px lightblue;
-}
-
 .nav_logo {
     padding-right: 2rem;
     padding-left: 2rem;
+    color: #052F5F;
 }
 
 .nav_links {
+    color: #052F5F;
     display: flex;
     align-items: center;
 }

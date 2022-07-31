@@ -11,9 +11,11 @@
 .main_text {
     font-size: 2rem;
     color: rgb(217, 3, 104);
+    margin-bottom: 0;
 }
 
 .sub_text {
+    margin-top: 0.6rem;
     font-size: 1.8rem;
     color: #1B1DC7;
 }
