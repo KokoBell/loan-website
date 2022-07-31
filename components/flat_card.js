@@ -12,9 +12,9 @@ const FlatCard = (props) => {
         />
         <div className={styles.text_wrapper}>
         <p className={styles.text}>{props.text ? props.text : "Text goes here"}</p>
-        {props.url ? <p className={styles.link}>
+        {props.url && <p className={styles.link}>
             <a href={props.url ? props.url : "/"}>{props.link_text ? props.link_text : "Link text goes here"}</a><span className={styles.arrow}>&rarr;</span>
-        </p> : <></>}
+        </p>}
         </div>
     </div>
     )

@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 18rem;
+    min-height: 10rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 8px;
+}
+
+.heading {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.text {
+    margin-top: 0;
+    font-size: 0.8rem;
+}
+
+.image_wrapper {
+    margin-top: 0;
+}

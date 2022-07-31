@@ -14,18 +14,22 @@
 
 .text_wrapper {
     margin-left: 8px;
+    display: flex;
+    align-items: center;
 }
 
 .text {
     font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .link {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-self: center;
     font-size: 0.88rem;
-    position: absolute;
-    bottom: 0;
     color: rgb(217, 3, 104);
+    margin-top: 0.6rem;
+    margin-bottom: 0;
 }

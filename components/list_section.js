@@ -15,7 +15,7 @@ const ListSection = (props) => {
                 <p className={styles.headline}>{props.headline}</p>
                 <ul className={styles.list_items}>
                     {props.list_items.map((list_item) => {
-                        return <li className={styles.list_item}>
+                        return <li key={list_item} className={styles.list_item}>
                             {list_item}
                         </li>
                     })}
@@ -29,7 +29,7 @@ const ListSection = (props) => {
                 <p className={styles.headline}>{props.headline}</p>
                 <ul className={styles.list_items}>
                     {props.list_items.map((list_item) => {
-                        return <li className={styles.list_item}>
+                        return <li key={list_item} className={styles.list_item}>
                             {list_item}
                         </li>
                     })}
