@@ -1,5 +1,37 @@
 .container {
   padding: 0;
+  display: grid;
+}
+
+.nav_logo {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  color: #052F5F;
+}
+
+.signup {
+  display: flex;
+  justify-self: flex-end;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  color: #052F5F;
+}
+
+.navbar {
+  width: 100%;
+  color: #052F5F;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_links {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav_link {
+  padding-left: 2rem;
 }
 
 .main {
@@ -12,9 +44,62 @@
   flex-direction: column;
 }
 
-.card_section {
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 0;
+  border-bottom: 0.2px solid gray;
+}
+
+.main_text {
+  font-size: 2rem;
+  color: rgb(217, 3, 104);
+  margin-bottom: 0;
+}
+
+.sub_text {
+  margin-top: 0.6rem;
+  font-size: 1.8rem;
+  color: #1B1DC7;
+}
+
+.list_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 0.8rem;
+}
+
+.list_item {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  box-sizing: inherit;
+  align-items: center;
+}
+
+.list_item::before {
+  content: "";
+  width: 24px;
+  height: 1px;
+  background-color: rgb(217, 3, 104);
+  display: block;
+  margin-right: 8px;
+}
+
+/* .card_section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  padding-left: 2rem;
+} */
+
+.card_section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-left: 2rem;
 }
 
@@ -22,6 +107,7 @@
   padding-left: 2rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .center_headline {
@@ -88,10 +174,38 @@
   flex-grow: 1;
 }
 
-@media (max-width: 600px) {
-  .container {
-    width: 100%;
+@media (max-width: 1200px) {
+  .hero {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.2px solid gray;
+    padding-bottom: 2rem;
+  }
+
+  .card_section {
+    display: grid;
+    grid-template-columns: repeat(2, 0.8fr);
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.2px solid gray;
+    padding-bottom: 1rem;
+  }
+
+  .card_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2rem;
   }
 }
 
