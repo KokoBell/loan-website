@@ -24,3 +24,20 @@
 .image_wrapper {
     margin-top: 0;
 }
+
+@media (max-width: 650px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

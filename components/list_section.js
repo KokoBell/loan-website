@@ -2,8 +2,8 @@ import styles from '../styles/ListSection.module.css'
 import Image from 'next/image'
 
 const ListSection = (props) => {
-    return (<div className={styles.list_section}>
-        {props.right ? <>
+    return (<>
+        {props.right ? <div className={styles.list_section}>
             <div className={styles.left_image}>
                 <Image
                     height={338}
@@ -24,7 +24,7 @@ const ListSection = (props) => {
                     <a href={props.url ? props.url : "/"}>{props.link_text ? props.link_text : "Link text goes here"}</a><span className={styles.arrow}>&rarr;</span>
                 </p>
             </div>
-        </> : <>
+        </div> : <div className={styles.left_image}>
             <div className={styles.list_wrapper}>
                 <p className={styles.headline}>{props.headline}</p>
                 <ul className={styles.list_items}>
@@ -45,8 +45,8 @@ const ListSection = (props) => {
                     src={props.source}
                 />
             </div>
-        </>}
-    </div>
+        </div>}
+    </>
     )
 }
 

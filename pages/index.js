@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useEffect } from 'react'
 import Button from '../components/button'
 import Card from '../components/card'
 import FlatCard from '../components/flat_card'
@@ -14,6 +15,19 @@ export default function Home() {
   const hero_items = ['Card Limit is 100% of FD Amount', 'Instant Virtual Card']
   const first_section_list = ['Credit Card on Fixed Deposit', 'Card Limit Equal to FD Amount', 'Helps Build Credit Score']
 
+  useEffect(() => {
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-500px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  })
+
   return (
     <div className={styles.container}>
       <Head>
@@ -23,13 +37,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className={styles.navbar}>
+      <nav className={styles.navbar} id="navbar">
         <h1 className={styles.nav_logo}> LOANS </h1>
-        <div className={styles.nav_links}>
-        <p className={styles.nav_link}> All Products </p>
-        <p className={styles.nav_link}> Learn </p>
-        <p className={styles.nav_link}> Resources </p>
-        <p className={styles.nav_link}> Contact </p>
+        <div className={styles.nav_links} >
+          <p className={styles.nav_link}> All Products </p>
+          <p className={styles.nav_link}> Learn </p>
+          <p className={styles.nav_link}> Resources </p>
+          <p className={styles.nav_link}> Contact </p>
         </div>
         <h1 className={styles.signup}> Sign Up </h1>
       </nav>

@@ -16,3 +16,21 @@
     display: block;
     margin-left: 12px;
 }
+
+@media (max-width: 1200px) {
+    .text {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .text {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
