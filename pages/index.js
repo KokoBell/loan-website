@@ -26,30 +26,41 @@ export default function Home() {
       </Head>
 
       <nav className={styles.navbar}>
-        <h1 className={styles.nav_logo}> LOANS </h1>
-        <div id="navbar" className={styles.nav_bar}>
-          <div className={styles.nav_links} >
-            <p className={styles.nav_link}> All Products </p>
-            <p className={styles.nav_link}> Learn </p>
-            <p className={styles.nav_link}> Resources </p>
-            <p className={styles.nav_link}> Contact </p>
+        <div id="nav" className={styles.nav}>
+          <h1 className={styles.nav_logo}> LOANS </h1>
+          <div id="navbar" className={styles.nav_bar}>
+            <div className={styles.nav_links} >
+              <p className={styles.nav_link}> All Products </p>
+              <p className={styles.nav_link}> Learn </p>
+              <p className={styles.nav_link}> Resources </p>
+              <p className={styles.nav_link}> Contact </p>
+            </div>
+            <p className={styles.signup}> Sign Up </p>
           </div>
-          <p className={styles.signup}> Sign Up </p>
         </div>
         <div id="hamburger" className={styles.hamburger} onClick={(e) => {
           const hamburger = document.getElementById("hamburger")
           hamburger.classList.toggle("active")
           const navbar = document.getElementById("navbar")
+          const navigation = document.getElementById("nav")
           const bar1 = document.getElementById("bar1")
           const bar2 = document.getElementById("bar2")
           const bar3 = document.getElementById("bar3")
           if (hamburger.classList.contains("active")) {
-            navbar.style.display = "block"
+            navigation.style.display = "flex"
+            navigation.style.flexDirection = "column"
+            hamburger.style.alignSelf = "flex-start"
+            hamburger.style.marginTop = "1rem"
+            navbar.style.display = "flex"
+            navbar.style.flexDirection = "column"
             bar1.style.transform = "translateY(6px) rotate(45deg)"
             bar2.style.display = "none"
             bar3.style.transform = "translateY(-8px) rotate(-45deg)"
           } else {
+            navigation.style.display = "flex"
+            navigation.style.flexDirection = "row"
             navbar.style.display = "none"
+            hamburger.style.marginTop = "1rem"
             bar1.style.transform = "translateY(0) rotate(0deg)"
             bar2.style.display = "block"
             bar3.style.transform = "translateY(0) rotate(0deg)"
