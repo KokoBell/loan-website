@@ -5,27 +5,15 @@ import Button from '../components/button'
 import Card from '../components/card'
 import FlatCard from '../components/flat_card'
 import Heading from '../components/heading'
-import Hero from '../components/hero'
 import IconCard from '../components/icon_card '
 import ListSection from '../components/list_section'
-import NavBar from '../components/navbar'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   const hero_items = ['Card Limit is 100% of FD Amount', 'Instant Virtual Card']
   const first_section_list = ['Credit Card on Fixed Deposit', 'Card Limit Equal to FD Amount', 'Helps Build Credit Score']
-
   useEffect(() => {
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-500px";
-      }
-      prevScrollpos = currentScrollPos;
-    }
+
   })
 
   return (
@@ -37,15 +25,41 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className={styles.navbar} id="navbar">
+      <nav className={styles.navbar}>
         <h1 className={styles.nav_logo}> LOANS </h1>
-        <div className={styles.nav_links} >
-          <p className={styles.nav_link}> All Products </p>
-          <p className={styles.nav_link}> Learn </p>
-          <p className={styles.nav_link}> Resources </p>
-          <p className={styles.nav_link}> Contact </p>
+        <div id="navbar" className={styles.nav_bar}>
+          <div className={styles.nav_links} >
+            <p className={styles.nav_link}> All Products </p>
+            <p className={styles.nav_link}> Learn </p>
+            <p className={styles.nav_link}> Resources </p>
+            <p className={styles.nav_link}> Contact </p>
+          </div>
+          <p className={styles.signup}> Sign Up </p>
         </div>
-        <h1 className={styles.signup}> Sign Up </h1>
+        <div id="hamburger" className={styles.hamburger} onClick={(e) => {
+          const hamburger = document.getElementById("hamburger")
+          hamburger.classList.toggle("active")
+          const navbar = document.getElementById("navbar")
+          const bar1 = document.getElementById("bar1")
+          const bar2 = document.getElementById("bar2")
+          const bar3 = document.getElementById("bar3")
+          if (hamburger.classList.contains("active")) {
+            navbar.style.display = "block"
+            bar1.style.transform = "translateY(6px) rotate(45deg)"
+            bar2.style.display = "none"
+            bar3.style.transform = "translateY(-8px) rotate(-45deg)"
+          } else {
+            navbar.style.display = "none"
+            bar1.style.transform = "translateY(0) rotate(0deg)"
+            bar2.style.display = "block"
+            bar3.style.transform = "translateY(0) rotate(0deg)"
+          }
+        }
+        }>
+          <span className={styles.bar} id="bar1"></span>
+          <span className={styles.bar} id="bar2"></span>
+          <span className={styles.bar} id="bar3"></span>
+        </div>
       </nav>
 
       <main className={styles.main}>

@@ -5,7 +5,6 @@
 
 .navbar {
   position: fixed;
-  top: 0;
   z-index: 1;
   background-color: white;
   width: 100%;
@@ -13,7 +12,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: 1s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.nav_bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .nav_logo {
@@ -25,9 +31,15 @@
 .signup {
   display: flex;
   justify-self: flex-end;
+  align-items: center;
   padding-right: 2rem;
   padding-left: 2rem;
-  color: #052F5F;
+  font-size: 1.2rem;
+  height: 2.6rem;
+  background-color: cadetblue;
+  color: white;
+  border-radius: 8px;
+  margin-left: 2rem;
 }
 
 .nav_links {
@@ -37,6 +49,27 @@
 
 .nav_link {
   padding-left: 2rem;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.cross {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 44px;
+  height: 6px;
+  margin: 8px auto;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  background-color: #052F5F;
 }
 
 .main {
@@ -178,12 +211,27 @@
     max-width: 100vw;
   }
 
+  .nav_bar {
+    display: none;
+    transition: 2s;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .nav_links {
-    top: 70px;
+    top: 0px;
     gap: 0;
     flex-direction: column;
     background-color: white;
     text-align: center;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   .hero {
@@ -193,7 +241,7 @@
     align-items: center;
     border-bottom: 0.2px solid gray;
     padding-bottom: 2rem;
-    margin-top: 12rem;
+    margin-top: 4rem;
   }
 
   .text_wrapper {
@@ -234,9 +282,14 @@
     max-width: 100vw;
   }
 
+  .nav_logo {
+    top: 0;
+  }
+
   .navbar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .hero {
@@ -246,7 +299,7 @@
     align-items: center;
     border-bottom: 0.2px solid gray;
     padding-bottom: 1rem;
-    margin-top: 20rem;
+    margin-top: 4rem;
   }
 
   .left_headline {
