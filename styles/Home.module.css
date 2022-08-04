@@ -94,13 +94,10 @@
   margin-right: 2rem;
 }
 
-.cross {
-  display: none;
-  cursor: pointer;
-}
 
 .bar {
   display: block;
+  cursor: pointer;
   width: 44px;
   height: 6px;
   margin: 8px auto;
@@ -170,6 +167,10 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding-left: 2rem;
+}
+
+.product_icon {
+  margin-top: 1rem;
 }
 
 .achievements {
@@ -351,13 +352,7 @@
     text-align: center;
   }
 
-  .card_section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 2rem;
-  }
-
+ 
   .attributes_wrapper {
     display: flex;
     flex-direction: column;
