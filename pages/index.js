@@ -32,7 +32,6 @@ export default function Home() {
             const hamburger = document.getElementById("hamburger")
             hamburger.classList.toggle("active")
             const navbar = document.getElementById("navbar")
-            const navigation = document.getElementById("nav")
             const bar1 = document.getElementById("bar1")
             const bar2 = document.getElementById("bar2")
             const bar3 = document.getElementById("bar3")
