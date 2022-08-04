@@ -9,6 +9,7 @@ const FlatCard = (props) => {
             width={120}
             src={props.source}
             className={styles.hero_image}
+            alt={props.text ? props.text : "Flat card image"}
         />
         <div className={styles.text_wrapper}>
         <p className={styles.text}>{props.text ? props.text : "Text goes here"}</p>
