@@ -59,6 +59,12 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .nav_bar {
+    margin-left: 0;
+  }
+}
+
 .nav_logo {
   padding-right: 2rem;
   padding-left: 2rem;
@@ -77,6 +83,7 @@
   color: white;
   border-radius: 8px;
   margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .nav_links {
@@ -256,8 +263,14 @@
 
   .navbar {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+  }
+
+  .nav {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 
   .nav_links {
@@ -266,6 +279,10 @@
     flex-direction: column;
     background-color: white;
     text-align: center;
+  }
+
+  .nav_link {
+    padding-left: 0;
   }
 
   .hamburger {
@@ -326,8 +343,7 @@
 
   .navbar {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
   }
 
   .hero {
@@ -352,7 +368,7 @@
     text-align: center;
   }
 
- 
+
   .attributes_wrapper {
     display: flex;
     flex-direction: column;
