@@ -38,6 +38,10 @@
     font-size: 1.4rem;
 }
 
+.card:hover .arrow{
+    margin-left: 0.8rem;
+}
+
 @media (max-width: 1000px) {
     .card {
         display: flex;
