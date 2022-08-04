@@ -3,7 +3,6 @@ import styles from '../styles/Card.module.css'
 const Card = (props) => {
     const heading = props.heading ? props.heading : "Insert a heading"
     return (
-        <div>
             <a href={props.url ? props.url : "/"} className={styles.card}>
                 <div>
                     <p className={styles.heading}>{heading}</p>
@@ -16,7 +15,6 @@ const Card = (props) => {
                     {props.icon}
                 </div>
             </a>
-        </div >
 
     )
 }

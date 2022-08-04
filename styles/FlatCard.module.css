@@ -4,7 +4,7 @@
     margin-right: 2rem;
     width: 24rem;
     height: 6rem;
-    border: 0.2px solid gray;
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 8px;

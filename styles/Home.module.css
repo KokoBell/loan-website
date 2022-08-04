@@ -137,7 +137,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-left: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .card_section {
+    justify-content: center;
+  }
 }
 
 .product_icon {
@@ -270,9 +275,9 @@
   }
 
   .card_section {
-    display: grid;
-    grid-template-columns: repeat(2, 0.8fr);
-    padding-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .achievements {
